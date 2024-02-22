@@ -141,23 +141,17 @@
     // 🧠 Even though object properties have no particular order, to avoid confusing
     // the test runner, please set in each object first name, then age, and finally jsLover.
     const zip = (names, years, booleans) => {
-    // Create an array to store the result
-    const result = [];
-  
-    // Loop over the arrays simultaneously
-    for (let i = 0; i < names.length; i++) {
-    // Create an object for each set of values
-    const obj = {
+     const result = [];
+     for (let i = 0; i < names.length; i++) {
+     const obj = {
       name: names[i],
-      born: years[i], // Convert year number to string
+      born: years[i], 
       jsLover: booleans[i]
     };
     
-    // Push the object to the result array
-    result.push(obj);
+     result.push(obj);
     }
   
-    // Return the array of objects
     return result;
 };
 
